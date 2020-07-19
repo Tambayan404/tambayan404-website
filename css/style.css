@@ -17,8 +17,8 @@
   --line-height: 2;
 
   /* Text Shadows: Blue Glow */
-  --effect-blue-glow: 0px 0px 24px rgba(56, 255, 255, 0.71);
-  --effect-pink-glow: 0px 0px 28.7027px #F839FC;
+  --effect-blue-glow: 0px 0px 1.25em rgba(56, 255, 255, 0.71);
+  --effect-pink-glow: 0px 0px 1.5em #F839FC;
 }
 
 * {
@@ -46,17 +46,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  font-family: var(--font-body);
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.2em;
   color: #fff;
-  text-decoration: none;;
+  font-family: var(--font-body);
+  text-decoration: none;
   text-shadow: var(--effect-blue-glow);
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+}
+
+a:hover, a:focus {
+  text-shadow: var(--effect-pink-glow);
+  text-decoration: underline;
+}
+
+a.link {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .wrapper {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   height: 100vh;
   padding: 5vw;
@@ -64,6 +77,13 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: var(--color-purple);
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    min-width: 400px;
+    max-width: 600px;
+  }
 }
 
 .logo {
@@ -86,6 +106,11 @@ a {
   text-align: center;;
 }
 
+.social-media-links a {
+  display: block;
+  text-align: center;
+}
+
 .emojis {
   display: block;
   max-width: 400px;
@@ -94,4 +119,11 @@ a {
 
 .emojis > img {
   margin: 0.5em;
+}
+
+.credits {
+  align-self: flex-end;
+  margin: 4em auto;
+  font-size: 0.75em;
+  opacity: 0.5;
 }
