@@ -1,0 +1,15 @@
+/* Tambayan 404 CSS Stylesheet */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Mono:wght@700&display=swap');
+
+:root {
+  /* Colors */
+  --color-teal: #38F3FF;
+  --color-pink: #F839FC;
+  --color-purple: #0F1123;
+
+  /* Font Families */
+  --font-headings: 'Space Mono', monospace;
+  --font-body: 'Montserrat', Arial, sans-serif;
+}
