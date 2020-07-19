@@ -1,0 +1,23 @@
+{
+  "name": "404-website",
+  "version": "1.0.0",
+  "description": "## TODO - set up simple page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tambayan404/tambayan404.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tambayan404/tambayan404/issues"
+  },
+  "homepage": "https://github.com/Tambayan404/tambayan404#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
