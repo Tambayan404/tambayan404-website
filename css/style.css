@@ -71,7 +71,8 @@ a.link {
 .wrapper {
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   padding: 5vw;
   display: flex;
   flex-direction: column;
@@ -102,7 +103,7 @@ a.link {
 .description {
   max-width: 600px;
   display: block;
-  margin: 2em auto;
+  margin: 1em auto;
   text-align: center;;
 }
 
@@ -119,6 +120,10 @@ a.link {
 
 .emojis > img {
   margin: 0.5em;
+}
+
+.emojis > img:hover {
+  cursor: grab;
 }
 
 .credits {
