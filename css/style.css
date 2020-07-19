@@ -12,15 +12,74 @@
   /* Font Families */
   --font-headings: 'Space Mono', monospace;
   --font-body: 'Montserrat', Arial, sans-serif;
+
+  --font-size: 16px;
+  --line-height: 2;
+
+  /* Blue Glow */
+  --effect-blue-glow: 0px 0px 24px rgba(56, 255, 255, 0.71);
 }
 
-body {
-  background: url(../images/bg.png);
+html, body {
+  background: url(../images/bg.svg);
+  font-size: var(--font-size);
   font-family: var(--font-body);
+  line-height: var(--line-height);
   color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-headings);
   text-transform: uppercase;
+}
+
+a {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;;
+  text-shadow: var(--effect-blue-glow);
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-purple);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.description {
+  max-width: 600px;
+  display: block;
+  margin: 2em auto;
+  text-align: center;;
+}
+
+.emojis {
+  display: block;
+  max-width: 400px;
+  justify-content: space-evenly;
+}
+
+.emojis > img {
+  margin: 0.5em;
 }
