@@ -16,16 +16,28 @@
   --font-size: 16px;
   --line-height: 2;
 
-  /* Blue Glow */
+  /* Text Shadows: Blue Glow */
   --effect-blue-glow: 0px 0px 24px rgba(56, 255, 255, 0.71);
+  --effect-pink-glow: 0px 0px 28.7027px #F839FC;
 }
 
-html, body {
-  background: url(../images/bg.svg);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url(../images/bg.svg) repeat;
+  color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
   font-size: var(--font-size);
   font-family: var(--font-body);
   line-height: var(--line-height);
-  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
