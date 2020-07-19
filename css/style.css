@@ -112,12 +112,19 @@ a.link {
   text-align: center;
 }
 
-.emojis {
-  display: flex;
-  /*max-width: 400px;
-  */justify-content: space-evenly;
+.marquee {
   animation: marquee 10s linear infinite;
   -webkit-animation: marquee 10s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.emojis {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2em auto;
 }
 
 .emojis > img {
@@ -127,36 +134,32 @@ a.link {
   object-fit: contain;
 }
 
-.emojis > img:hover {
-  cursor: grab;
-}
-
 .credits {
   align-self: flex-end;
-  margin: 4em auto;
+  margin: 2em auto;
   font-size: 0.75em;
   opacity: 0.5;
   text-align: center;
 }
 
-.marquee {
+.button {
   display: block;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-left: -5vw;
-  margin-right: -5vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1em auto;
+  padding: 0.25em 1em;
+  color: #fff;
+  background-color: var(--color-pink);
+  transition: background-color 200ms ease-in-out;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -ms-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
 }
 
-.marquee a {
-  display: inline-block;
-  will-change: transform;
-  animation: marquee 5s linear infinite;
-  -webkit-animation: marquee 5s linear infinite;
-}
-
-.marquee a:hover {
-  animation-play-state: paused;
+.button:hover {
+  text-decoration: none;
+  background-color: var(--color-teal);
 }
 
 /* Marquee CSS Animation */
@@ -180,11 +183,13 @@ a.link {
 
 @media (prefers-reduced-motion: reduce) {
   .marquee {
-    white-space: normal;
-  }
-
-  .marquee a {
     animation: none;
     -webkit-animation: none;
-}
+  }
+
+  .emojis {
+    flex-wrap: wrap;
+    min-width: 400px;
+    max-width: 600px;
+  }
 }
