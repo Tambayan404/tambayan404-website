@@ -127,3 +127,53 @@ a.link {
   font-size: 0.75em;
   opacity: 0.5;
 }
+
+.marquee {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: -5vw;
+  margin-right: -5vw;
+}
+
+.marquee a {
+  display: inline-block;
+  will-change: transform;
+  animation: marquee 5s linear infinite;
+  -webkit-animation: marquee 5s linear infinite;
+}
+
+.marquee a:hover {
+  animation-play-state: paused;
+}
+
+/* Marquee CSS Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+
+  100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    white-space: normal;
+  }
+
+  .marquee a {
+    animation: none;
+    -webkit-animation: none;
+}
+}
