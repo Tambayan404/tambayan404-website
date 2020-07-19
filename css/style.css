@@ -131,6 +131,7 @@ a.link {
   margin: 4em auto;
   font-size: 0.75em;
   opacity: 0.5;
+  text-align: center;
 }
 
 .marquee {
