@@ -113,13 +113,18 @@ a.link {
 }
 
 .emojis {
-  display: block;
-  max-width: 400px;
-  justify-content: space-evenly;
+  display: flex;
+  /*max-width: 400px;
+  */justify-content: space-evenly;
+  animation: marquee 10s linear infinite;
+  -webkit-animation: marquee 10s linear infinite;
 }
 
 .emojis > img {
   margin: 0.5em;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .emojis > img:hover {
@@ -165,11 +170,11 @@ a.link {
 }
 
   100% {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
+    transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
+    -moz-transform: translateX(-110%);
+    -ms-transform: translateX(-110%);
+    -o-transform: translateX(-110%);
 }
 }
 
