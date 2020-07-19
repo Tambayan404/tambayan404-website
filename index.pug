@@ -1,5 +1,7 @@
 ---
 title: "Tambayan 404"
+description: "The PH's biggest Discord community for Filipinos in Tech and general tech enthusiasts to have fun, unwind, and not take life seriously."
+
 layout: base
 ---
 
@@ -8,7 +10,7 @@ div.wrapper
     img(src="./images/tambayan-404-logo.png")
 
   p.description
-    | The PH's biggest Discord community for Filipinos in Tech and general tech enthusiasts to have fun, unwind, and not take life seriously.
+    {{ description }}
 
   div.social-media-links
     a(href="https://fb.com/Tambayan404" title="Like Tambayan 404 on Facebook") Facebook
@@ -25,3 +27,6 @@ div.wrapper
     p
       | Background pattern from 
       a(href="https://www.heropatterns.com/") Hero Patterns
+    p
+      | Powered by 
+      a(href="https://www.netlify.com/" target="_blank") Netlify
