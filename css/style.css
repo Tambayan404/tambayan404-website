@@ -83,7 +83,7 @@ a.link {
 @media screen and (min-width: 600px) {
   .wrapper {
     min-width: 400px;
-    max-width: 600px;
+    max-width: 800px;
   }
 }
 
@@ -193,11 +193,11 @@ a.link {
 }
 
   100% {
-    transform: translateX(-110%);
-    -webkit-transform: translateX(-110%);
-    -moz-transform: translateX(-110%);
-    -ms-transform: translateX(-110%);
-    -o-transform: translateX(-110%);
+    transform: translateX(-150%);
+    -webkit-transform: translateX(-150%);
+    -moz-transform: translateX(-150%);
+    -ms-transform: translateX(-150%);
+    -o-transform: translateX(-150%);
 }
 }
 
@@ -210,6 +210,44 @@ a.link {
   .emojis {
     flex-wrap: wrap;
     min-width: 400px;
-    max-width: 600px;
+    max-width: 800px;
+  }
+}
+
+/* For Open Salary Survey */
+.highlight {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  margin: 1em auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: rgba(65,255,255,0.2);
+}
+
+.highlight .additional-links {
+  font-size: 0.75rem;
+}
+
+.additional-links a { display: block; }
+
+@media screen and (max-width: 490px) {
+  .highlight { width: 100%; }
+}
+
+@media screen and (min-width: 491px) {
+  .highlight .additional-links {
+    display: inline-block;
+  }
+
+  .additional-links a {
+    display: inline-block;
+  }
+  
+  .additional-links a:not(:last-of-type)::after {
+    content: "|";
+    margin: 0 1rem;
   }
 }
