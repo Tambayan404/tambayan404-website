@@ -146,20 +146,40 @@ a.link {
   display: block;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 1em auto;
+  margin: 0.5rem auto;
   padding: 0.25em 1em;
   color: #fff;
-  background-color: var(--color-pink);
-  transition: background-color 200ms ease-in-out;
-  -webkit-transition: background-color 200ms ease-in-out;
-  -moz-transition: background-color 200ms ease-in-out;
-  -ms-transition: background-color 200ms ease-in-out;
-  -o-transition: background-color 200ms ease-in-out;
+  text-shadow: none;
+  border: 2px solid var(--color-button);
+  background-color: var(--color-button);
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
 }
 
 .button:hover {
   text-decoration: none;
-  background-color: var(--color-teal);
+}
+
+.primary.button {
+  --color-button: var(--color-pink);
+}
+
+.secondary.button,
+.primary.button:hover,
+.primary.button:focus {
+  --color-button: var(--color-teal);
+}
+
+.secondary.button {
+  background-color: transparent;
+}
+
+.secondary.button:hover,
+.secondary.button:focus {
+  --color-button: var(--color-pink);
 }
 
 /* Marquee CSS Animation */
