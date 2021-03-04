@@ -6,4 +6,4 @@ https://tambayan404.com
 
 This is the website for **Tambayan 404**, a PH Discord community for Filipinos in Tech and general tech enthusiasts to have fun, unwind, and not take life seriously.
 
-**Find us online**: [Facebook](https://fb.com/Tambayan404) | [Twitter](https://twitter.com/Tambayan404)
+**Find us online**: [Facebook](https://fb.com/Tambayan404) | [Twitter](https://twitter.com/Tambayan404) | [YouTube](https://www.youtube.com/channel/UCOJv2zlfpXSUpUwS_KlP5uA)
